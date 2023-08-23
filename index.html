@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="screen">
+        <div class="leftside">
+            <img src="/images/financial_data.png" alt="">
+        </div>
+        <div class="rightside">
+            <h1>Crie uma conta</h1>
+            <form action="/cadastrar" method="post" class="validator" >
+                <input type="text" name="name" placeholder="Digite seu nome" data-rules="required|min=3"> <br>
+                <input type="email" name="email" placeholder="Digite seu email" data-rules="required|email"> <br>
+                <input type="password" name="password" placeholder="Digite sua senha (6 caracteres)" data-rules="required|min=6"> <br>
+                <input type="submit" class="btn" value="Cadastrar">
+            </form>
+
+            <div>
+                <a href="/login">Já tenho uma conta!</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
